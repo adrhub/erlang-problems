@@ -1,0 +1,13 @@
+Write a function map_search_pred(Map, Pred) that returns the first element
+{Key,Value} in the map for which Pred(Key, Value) is true.
+
+
+
+Map = #{k1 => 1, 2 => 2, k3 => 3}
+FunX = fun(X) -> {K, V} = X, K =:= V end
+
+Input:
+map_search_pred(Map, FunX)
+
+Output:
+{2,2}

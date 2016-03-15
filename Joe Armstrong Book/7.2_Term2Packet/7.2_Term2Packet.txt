@@ -1,0 +1,27 @@
+2. Write a function term_to_packet(Term) -> Packet that returns a binary consisting
+of a 4-byte length header N followed by N bytes of data produced by calling
+term_to_binary(Term).
+
+3. Write the inverse function packet_to_term(Packet) ->Ter m that is the inverse of
+the previous function.
+
+4. Write some tests in the style of Adding Tests to Your Code, on page 46, to
+test that the previous two functions can correctly encode terms into
+packets and recover the original terms by decoding the packets.
+
+term2packet:
+Input: 
+"term"                     
+Output:
+<<0,0,0,64,131,107,0,4,116,101,114,109>>
+
+
+
+packet2term:
+Input:
+<<0,0,0,64,131,107,0,4,116,101,114,109>>
+Output:
+"term"
+
+
+
